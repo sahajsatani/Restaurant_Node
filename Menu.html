@@ -1,0 +1,53 @@
+<!-- menu.html -->
+
+<h2>___Item Menu</h2>
+
+<table id="menu-table">
+    <thead>
+        <tr>
+            <th>Menu ID</th>
+            <th>Food Category</th>
+            <th>Food Item Name</th>
+            <th>Food Ingredient</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Content will be loaded dynamically using AJAX and jQuery -->
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "./index.xml",
+            dataType: "xml",
+            success: function (xml) {
+                $(xml).find('item').each(function () {
+                    let menuId = $(this).find('menuid').text();
+                    let foodCategory = $(this).find('foodcategory').text();
+                    let foodItemName = $(this).find('fooditemname').text();
+                    let foodIngredient = $(this).find('foodingredient').text();
+                    let price = $(this).find('price').text();
+                    let qty = $(this).find('qty').text();
+
+                    $('#menu-table tbody').append(
+                        '<tr>' +
+                        '<td>' + menuId + '</td>' +
+                        '<td>' + foodCategory + '</td>' +
+                        '<td>' + foodItemName + '</td>' +
+                        '<td>' + foodIngredient + '</td>' +
+                        '<td>' + price + '</td>' +
+                        '<td>' + qty + '</td>' +
+                        '</tr>'
+                    );
+                });
+            },
+            error: function () {
+                alert("Error loading menu data.");
+            }
+        });
+    });
+</script>

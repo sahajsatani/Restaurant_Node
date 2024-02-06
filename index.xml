@@ -1,0 +1,12 @@
+<!-- menultems.xml -->
+
+<menu>
+    <item>
+        <menuid>1</menuid>
+        <foodcategory>Main Course</foodcategory>
+        <fooditemname>Spaghetti Bolognese</fooditemname>
+        <foodingredient>Pasta, Meat Sauce</foodingredient>
+        <price>12.99</price>
+        <qty>1</qty>
+    </item>
+</menu>
