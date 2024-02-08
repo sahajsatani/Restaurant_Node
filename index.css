@@ -38,3 +38,10 @@ footer {
     /* bottom: 0%; */
     text-align: center;
 }
+
+/* Table css */
+#menu-table{
+    margin: auto;
+    width: 50%;
+    inline-size: 40%;
+}
