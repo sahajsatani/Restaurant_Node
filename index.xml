@@ -1,0 +1,51 @@
+<!-- menultems.xml -->
+<menu>
+    <item>
+        <menuid>1</menuid>
+        <foodcategory>Main Course</foodcategory>
+        <fooditemname>Spaghetti Bolognese</fooditemname>
+        <foodingredient>Pasta, Meat Sauce</foodingredient>
+        <price>12.99</price>
+        <qty>1</qty>
+    </item>
+    <item>
+        <menuid>2</menuid>
+        <foodcategory>Snacks</foodcategory>
+        <fooditemname>Pizza</fooditemname>
+        <foodingredient>Sweet corn, Cheese, Paneer</foodingredient>
+        <price>20</price>
+        <qty>4</qty>
+    </item>
+    <item>
+        <menuid>3</menuid>
+        <foodcategory>Startup</foodcategory>
+        <fooditemname>Manchaw Soup</fooditemname>
+        <foodingredient>Brokly, Chilli, Carrat</foodingredient>
+        <price>15.90</price>
+        <qty>3</qty>
+    </item>
+    <item>
+        <menuid>4</menuid>
+        <foodcategory>Deener</foodcategory>
+        <fooditemname>Litti Chokha</fooditemname>
+        <foodingredient>Wheat Flower, Potato</foodingredient>
+        <price>10.50</price>
+        <qty>2</qty>
+    </item>
+    <item>
+        <menuid>5</menuid>
+        <foodcategory>Main Course</foodcategory>
+        <fooditemname>Puri Undhiyu</fooditemname>
+        <foodingredient>Vegitable</foodingredient>
+        <price>12</price>
+        <qty>1</qty>
+    </item>
+    <item>
+        <menuid>6</menuid>
+        <foodcategory>Main Course</foodcategory>
+        <fooditemname>Dosa</fooditemname>
+        <foodingredient>Rice Better</foodingredient>
+        <price>18</price>
+        <qty>2</qty>
+    </item>
+</menu>
