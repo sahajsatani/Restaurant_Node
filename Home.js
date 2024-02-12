@@ -4,7 +4,7 @@ function loadMenu(){
     console.log(out);
 
     let req = new XMLHttpRequest();
-    req.open('GET','index.xml',true);
+    req.open('GET','MenuItem.xml',true);
 
     req.onreadystatechange = function(){
 
@@ -29,7 +29,7 @@ function loadMenu(){
 }
 
 function homeRedirect(){
-    window.location.href = "Home.html";
+    window.location.href = "index.html";
 }
 
 
