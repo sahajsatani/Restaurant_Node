@@ -21,7 +21,7 @@ header{
 }  
 nav{
     display: flex;
-    float: left;
+    /* float: left; */
 }
 nav li {
     display: inline;    
@@ -36,10 +36,47 @@ nav li button{
     color: white;
 }
 
+#navBtn{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 25px;
+    text-align: right;
+}
+
+#navBtn section{
+    border: 2px solid white;
+    border-radius: 45px;
+    padding: 9px;
+}
+
+.navBtnCss:hover{
+    color: lightgray;
+}
+
+.navBtnCss{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* Main Contant */
 #main-content{
     text-align: center;
     margin-top: 20px;
+    padding: 30px;
+}
+
+#HomePara{
+    text-align: center;
 }
 
 /* Table css */

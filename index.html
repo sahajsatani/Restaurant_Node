@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -14,17 +14,25 @@
         <section>
             <nav>
                 <ul>
-                    <li><button onclick="homeRedirect()" class="nav_btn">Home</button></li>
+                    <li><button href="/index.html" class="nav_btn">Home</button></li>
                     <li><button onclick="homeRedirect()" class="nav_btn">About Restaurants</button></li>
                     <li><button onclick="loadMenu()" class="nav_btn">Item Menu</button></li>
-                    <li><button onclick="homeRedirect()" class="nav_btn">Chef Profile</button></li>
+                    <li><a href="Chef.html" class="nav_link">Chef Profile</a></li>
                     <li><button onclick="homeRedirect()" class="nav_btn">Contact Us</button></li>
                 </ul>
+                <div id="navBtn">
+                    <section>
+                    <button id="sign"  class="navBtnCss" href="#">Sign Up</button>
+                    <button id="login" class="navBtnCss" href="#">Login</button>
+                    </section>
+                </div>
             </nav>
         </section>
     </header>
 
     <main id="main-content">
+        <h2>Welcome To Sahaj Restaurant</h2>
+        <p id="HomePara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, suscipit consequatur id libero quos officiis nemo vitae soluta nulla ducimus, velit ipsa animi optio! Fugit modi quia illum eos laborum? Lorem ipsum dolor sit amet consectetur.</p>
     </main>
 
     <footer>
@@ -32,7 +40,7 @@
         <p>&copy; 2024 Restaurant Management System</p>
     </footer>
     <!-- <script src="Builtin/jquery-3.7.1.min.js"></script> -->
-    <script src="Home.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
