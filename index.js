@@ -28,8 +28,29 @@ function loadMenu(){
     req.send();
 }
 
+function loadChef(){
+    let out = "<table id='tblChef'><tbody>"
+    fetch('Builtin/Menu.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data[0].Path);
+            for(let i=0; i<data.length; i++){
+                out += "<tbody><tr><td><img class='Chef_img' src='"+data[i].Path+"'alt='Chef Photo'></td><td>"+data[i].Name+"</td><td>"+data[i].Food_Category+"</td></tr>";
+            }
+            out+="</tbody></table>";
+            document.getElementById('main-content').innerHTML = out;
+        })
+        .catch(error => {
+            console.error('Error fetching data: ', error);
+            document.getElementById('userData').innerHTML = '<p>Error loading user data.</p>';
+        });
+}
+
 function homeRedirect(){
     location.href = "index.html";
+}
+function contactRedirect(){
+    location.href = "ContactUS.html";
 }
 
 

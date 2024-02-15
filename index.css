@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 header::after{
     background: url('https://source.unsplash.com/collection/190727/1600*900') no-repeat center center/cover;
     content: "";
@@ -14,19 +15,22 @@ header::after{
     z-index: -1;
     opacity: 0.3;
 }
+
 header{
     box-shadow: 2px 5px 5px black;
     display: flex;
     flex-direction: column;
 }  
+
 nav{
     display: flex;
-    /* float: left; */
 }
+
 nav li {
     display: inline;    
     margin-right: 25px;
 }
+
 nav li button{
     cursor: pointer;
     outline: none;
@@ -97,4 +101,20 @@ footer {
     right: 25%;
     left: 25%;
     text-align: center;
+}
+
+
+/* Chef Page */
+#tblChef{
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    inline-size: 60%;
+    border-spacing: 1.5em;
+}
+#tblChef img{
+    
+    height: 128px;
+    width: 128px;
+    border-radius: 20px;
 }
