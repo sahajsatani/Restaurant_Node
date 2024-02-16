@@ -118,3 +118,7 @@ footer {
     width: 128px;
     border-radius: 20px;
 }
+
+p{
+text-wrap:wrap;
+}
